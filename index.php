@@ -2,10 +2,7 @@
     include("./includes/config.php");
 
     // VARIAVEIS DO SEO
-    $title_pagina           = "Cannabis para tratamento";
-    $descricao_pagina       = "";
-    $palavra_chave_pagina   = "";
-    $url_pagina             = $config->urlsite();
+    $title_pagina           = "Canabis para tratamento";
 
     // DEPOIMENTOS
     $depoimentos = array(
@@ -57,11 +54,14 @@
     <header id="inicio" class=" background_img_1" data-anime>
         <article class="container h-100 d-flex position-relative">
             <div class="row h-100 text-white">
-                <div class="col-lg-10 col-md-10 col-sm-12 col-12 d-flex flex-column align-items-start my-auto" data-anime="left">
-                    <h1 class="fw700 mb-4 uppercase">
+                <div class="col-lg-10 col-md-10 col-sm-12 col-12 banner-principal d-flex flex-column align-items-start my-auto" data-anime="left">
+                    <h1 class="fw700  mb-4 uppercase">
                         O Tramendo de Cannabis ajuda pessoas, <br> com 
                         <span class="text-secondary" data-wait="1000" data-palavras='["Alzheime", "Doença de Parkinson", "Dor crônica", "Ansiedade"]'></span><span class="text-primary">_</span>
                     </h1>
+                    <p class="my-4" data-anime>
+                        <b>Consulta, prescrição e autorização</b>
+                    </p>
                     <div class="bg-transparent rounded shadow p-3">
                         <form action="obrigado" method="post" id="form_cadastro" onsubmit="previneEnvioExtra()">
                             <div class="form-row">
@@ -99,11 +99,26 @@
             </div>
         </article>
     </header>
-
+    <section class="bg-white section-benficios py-4">
+        <article class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 ">
+                    <div class="text-center">
+                        <h2 class="uppercase text-secondary fw700 mb-4" data-anime>
+                            Veja como a cannabis medicinal pode te ajudar
+                        </h2>
+                        <p class="my-4" data-anime>
+                            Consulta, prescrição e autorização
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
     <section class="bg-white py-5">
         <article class="container text-center">
             <h3 class="uppercase text-secondary fw700 mb-4" data-anime>
-                Lorem ipsum risus nam
+                Veja como a cannabis medicinal pode te ajudar
             </h3>
             <p class="mb-3" data-anime>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.
@@ -383,7 +398,7 @@
                     </p>
                     <a class="text-white text-center py-3 px-3 mx-auto fw500 underline" href="https://bmasolucoesdigitais.com.br/" target="_black">
                         Desenvolvido por: 
-                        <img class="ml-2" src="<?=$config->urlsite("assets/imagens/logos/logo_bma.svg")?>" alt="BMA Soluções Digitais" style="max-width: 7rem;">
+                        <img class="ml-2" src="assets/imagens/logos/logo_bma.svg" alt="BMA Soluções Digitais" style="max-width: 7rem;">
                     </a>
                 </div>
             </div>

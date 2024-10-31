@@ -5,7 +5,7 @@
  * @site https://bmasolucoesdigitais.com.br/
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --color_1: #0065CA;
@@ -41,6 +41,11 @@
 
     --scrollbar_fundo: initial;
     --scrollbar_color: #777777;
+
+    /*Fontes para Clínica*/
+    --font_clinica1: 'Montserrat", sans-serif';
+    --font_clinica2: 'Bodoni Moda SC', serif;
+    --font_clinica3: 'EB Garamond', serif;
 }
 
 html {
@@ -53,7 +58,6 @@ body {
     scrollbar-color: var(--scrollbar_color) var(--scrollbar_fundo);
     overflow: overlay;
     scrollbar-width: thin;
-    font-family: 'Noto Sans', sans-serif !important;
     color: var(--color_lestras_1) !important;
 }
 
@@ -95,7 +99,6 @@ body::-webkit-scrollbar {
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 0.5rem;
-    font-family: inherit;
     font-weight: 400;
     line-height: 1.5;
     color: inherit;
@@ -524,6 +527,21 @@ li:hover .icon_card .icon {
     100% {
         box-shadow: 0 0 .5rem .1rem var(--color_2);
     }
+}
+
+.banner-principal h1{
+    font-family: "Montserrat", sans-serif;
+}
+
+.banner-principal p{
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-size: 25px;
+}
+
+.section-benficios h2{
+    font-family: "Bodoni Moda SC", serif;
+    letter-spacing: 0.2px;
 }
 
 .card_depoimento {
